@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+/* Chris Aquino's "photo frame technique" */
+.card-frame {
+  max-width: 25%;
+  outline: 3px solid orange;
+}
+
+.card-frame img {
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
