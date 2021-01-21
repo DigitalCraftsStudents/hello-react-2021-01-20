@@ -18,14 +18,18 @@ const data = [
         description: "you know, a cat",
         url: "/cat2.jpg"
     },
-    {
-        url: "/cat4.jpg"
-    },
-    {
-        url: "/cat6.jpg"
-    }
+    // {
+    //     title: "it's another cat",
+    //     description: "you know, a cat",        
+    //     url: "/cat4.jpg"
+    // },
+    // {    
+    //     url: "/cat6.jpg"
+    // }
 ];
 function PhotoGallery() {
+    // A React.Fragment is like an Array of Components
+    // Also written as <></>
     return (
         <>
             <h2>The Gallery</h2>
@@ -33,7 +37,8 @@ function PhotoGallery() {
                 {
                    data.map(i => <PhotoCard 
                                     title={i.title}
-                                    url={i.url} 
+                                    url={i.url}
+                                    description={i.description}
                                 />)
                 }
             </div>
